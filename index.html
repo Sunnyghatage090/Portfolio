@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="personl profile/style.css">
+</head>
+<body>
+    
+    <div class="main">
+      <header class="nav12">
+
+        
+        <div class="navbar">
+            
+            <ul>
+              <button class="navba">
+                <li>
+                  <div class="aba"></div>
+                  <div class="abc"></div>
+                  <div class="abb"></div>
+                </li>
+              </button>
+              <div class="panel">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">MY WORKS</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </div>
+            </ul>
+        </div>
+      </header>
+      <div class="all_info">
+      <div class="info">
+        <h2>Hi, I'm <span>Sunny</span>.</h2>
+        <h1><span>W</span>EB <span>D</span>ESIGNER</h1>
+        <h3>and I'm passionate about web development and love creating user-friendly and efficient websites.</h3>
+      </div>
+      <div class="deta">
+        <h2>Details</h2>
+        <b>Name:</b>
+        Sunny Dinkae Ghatage<br>
+        <b>Age:</b>
+        19<br>
+        <b>Address:</b>
+        Kolhapur, Maharashtra, India.<br>
+        <b>Contact No.:-</b>
+        <a href="tel:7888271390" style="color: black;">+91-788-827-1390</a>
+
+      </div>
+      
+      <div class="icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+      </div>
+      </div>
+      <div class="image">
+        <img src="pic/sunny.png" class="boy">
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+    var acc = document.getElementsByClassName("navba");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+
+    function openNav() {
+  document.getElementById("navba").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("navba").style.width = "0%";
+}
+
+    </script>
+    
+</body>
+</html>
